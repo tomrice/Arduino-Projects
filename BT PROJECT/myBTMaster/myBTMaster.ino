@@ -25,7 +25,7 @@ For more details about the product please check http://www.seeedstudio.com/depot
  
  
 /* Upload this sketch into Seeeduino and press reset*/
-#include <NewSoftSerial.h>   //Software Serial Port
+#include <SoftwareSerial.h>   //Software Serial Port
 #define RxD 6
 #define TxD 7
  
@@ -41,7 +41,7 @@ String slaveAddr;
 
 String connectCmd = "\r\n+CONN=";
 
-NewSoftSerial blueToothSerial(RxD,TxD);
+SoftwareSerial blueToothSerial(RxD,TxD);
  
 void setup() 
 { 
