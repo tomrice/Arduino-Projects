@@ -21,7 +21,7 @@ void loop() {
   Wire.write(ON); // Needed twice, since the 4 lowest bits (of 12) are in the fourth byte
   Wire.endTransmission();
 
-  delay(10);
+  delay(30);
   Serial.println("on");
   
   Wire.beginTransmission(Device);

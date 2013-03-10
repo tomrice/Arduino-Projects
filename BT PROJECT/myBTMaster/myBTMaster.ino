@@ -70,6 +70,10 @@ void loop()
  } 
 } 
  
+ 
+ 
+ 
+// SETUP THE BLUETOOTH CONNECTION
 void setupBlueToothConnection()
 {
   blueToothSerial.begin(38400); //Set BluetoothBee BaudRate to default baud rate 38400
